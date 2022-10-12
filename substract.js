@@ -1,6 +1,6 @@
 module.exports = function substract(a,b) {
     if(a < b){
-    return 0;
+    throw new Error('Negative value not allowed');
     }
     return a - b;
     }
