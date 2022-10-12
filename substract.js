@@ -1,6 +1,7 @@
 module.exports = function substract(a,b) {
-    if(a < b){
-    return 0;
+    const res = a - b
+    if(Number.isNaN(res)) {
+        throw new Error('The result is not a number')
     }
-    return a - b;
+    return res;
     }
